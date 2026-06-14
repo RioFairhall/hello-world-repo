@@ -1,0 +1,8 @@
+name: Self Hosted Runner Example
+on: workflow_dispatch
+jobs:
+  hello-job:
+    runs-on: [self-hosted, Windows, X64]
+    steps:
+      - name: Echo Text
+        run: echo 'Hello Self Hosted runner'
