@@ -2,7 +2,10 @@ name: Hellow World
 on: [push, workflow_dispatch]
 jobs:
   hello-job:
-    runs-on: [ubuntu-latest, self-hosted, Windows, X64]
+    strategy:
+      matrix:
+        os: [ubuntu-latest, self-hosted, Windows, X64]
+    runs-on: ${{matrix.os}}
     steps:
     - name: Echo text
       run: echo "Hello, world!"
