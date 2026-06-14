@@ -4,7 +4,7 @@ jobs:
   hello-job:
     strategy:
       matrix:
-        os: [ubuntu-latest, self-hosted, Windows, X64]
+        os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
     steps:
     - name: Echo text
