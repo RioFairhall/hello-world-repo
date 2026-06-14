@@ -6,7 +6,7 @@ jobs:
   testing-job:
     runs-on: [self-hosted, Windows, X64]
     steps:
-      - name: Echo Text
+      - name: Echo Text on cmd
         shell: cmd 
         # It enable this step to bypasses PowerShell and uses Command Prompt instead 
         # Reason -Execution Policy restricts runnig PowerShell Scripts in windows
