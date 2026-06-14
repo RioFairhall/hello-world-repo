@@ -14,5 +14,10 @@ jobs:
           echo 'testing.. Self Hosted runner'
           echo 'running..'
           echo 'status: OK'
-          
+
+      - name: Echo Text but on Powershell #By Default command will run inside powershell script
+        run: |
+          echo 'testing.. Self Hosted runner on PS'
+          echo 'running.. on powershell'
+          echo 'status: OK on powersshell'
           
